@@ -14,7 +14,7 @@ services:
 
     certbot:
         image: certbot/certbot:latest
-        command: certonly --webroot --webroot-path=/var/www/certbot --email erturk@erturk.me --agree-tos --no-eff-email -d www.erturk.me
+        command: certonly --noninteractive --webroot --webroot-path=/var/www/certbot --email erturk@erturk.me --agree-tos --no-eff-email -d www.erturk.me
         volumes:
             - ./certbot/conf:/etc/letsencrypt
             - ./certbot/logs:/var/log/letsencrypt
