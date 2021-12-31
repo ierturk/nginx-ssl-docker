@@ -4,7 +4,6 @@ services:
         image: nginx:${NGINX_IMAGE_TAG:-1.21-alpine}
         restart: always
         volumes:
-            - ./public:/var/www/html
             - ${NGINX_CONF_PATH:-./conf.d}:/etc/nginx/conf.d
             - ./certbot/conf:/etc/nginx/ssl
             - ./certbot/data:/var/www/certbot
