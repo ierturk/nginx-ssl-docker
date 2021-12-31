@@ -1,1 +1,1 @@
-# ghost-nginx-ssl-docker
+# nginx-ssl-docker
