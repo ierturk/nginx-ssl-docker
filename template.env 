@@ -1,0 +1,36 @@
+# MariaDB
+export MARIADB_IMAGE_TAG=10.7-focal
+export MARIADB_ROOT_PASSWORD=
+export MARIADB_DATA_PATH=./mariadb-data
+
+# Ghost
+export GHOST_IMAGE_TAG=4-alpine
+export GHOST_BLOG_URL=
+export GHOST_DB_CLIENT=
+export GHOST_DB_CONN=
+export GHOST_DB_CONN_DB=
+export GHOST_DB_CONN_USER=
+export GHOST_DB_CONN_PASSWORD=
+export GHOST_MAIL_FROM=
+export GHOST_MAIL_TRANSPORT=
+export GHOST_MAIL_HOST=
+export GHOST_MAIL_PORT=
+export GHOST_MAIL_USER=
+export GHOST_MAIL_PASSWORD=
+export GHOST_CONTENT_PATH=./ghost
+ 
+# NGINX
+export NGINX_IMAGE_TAG=1.21-alpine
+export NGINX_HTTP_PORT=80
+export NGINX_HTTPS_PORT=443
+export NGINX_CONF_PATH=./conf.d
+export NGINX_WWWW_ROOT_PATH=./public
+ 
+# CertBot
+export CERTBOT_IMAGE_TAG=v1.22.0
+export CERTBOT_EMAIL=
+export CERTBOT_DOMAIN=
+export CERTBOT_SUB_DOMAIN=
+export CERTBOT_CONF_PATH=./nginx-ssl/certbot/conf
+export CERTBOT_LOG_PATH=./nginx-ssl/certbot/logs
+export CERTBOT_DATA_PATH=./nginx-ssl/certbot/data
